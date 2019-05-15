@@ -2,14 +2,14 @@
 // using BorderLayout
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
+
 public class FixDebugFifteen2 extends JFrame
 {
-   JButton nb = new JButton("Left    ");
-   JButton sb = new JButton("Down  ");
-   JButton eb = new JButton("Right ");
-   JButton wb = new JButton("Center  ");
-   JButton cb = new JButton("Up");
+   JButton west = new JButton("Left    ");
+   JButton south = new JButton("Down  ");
+   JButton east = new JButton("Right ");
+   JButton center = new JButton("Center  ");
+   JButton north = new JButton("Up");
    Container con = null;
 
    public FixDebugFifteen2()
@@ -17,11 +17,11 @@ public class FixDebugFifteen2 extends JFrame
       con = this.getContentPane();
       con.setLayout(new BorderLayout());
 
-       con.add(nb, BorderLayout.WEST);
-       con.add(sb, BorderLayout.SOUTH);
-       con.add(eb, BorderLayout.EAST);
-       con.add(wb, BorderLayout.CENTER);
-       con.add(cb, BorderLayout.NORTH);
+       con.add(west, BorderLayout.WEST);
+       con.add(south, BorderLayout.SOUTH);
+       con.add(east, BorderLayout.EAST);
+       con.add(center, BorderLayout.CENTER);
+       con.add(north, BorderLayout.NORTH);
    }
    public static void main(String[] args)
    {
